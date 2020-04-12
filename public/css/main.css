@@ -3,4 +3,75 @@
 
 * {
 	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+}
+
+.nav-header {
+	z-index: 2;
+	display: flex;
+}
+
+.menu-header {
+	display: flex;
+}
+
+.menu-header a {
+	color: #fff;
+	font-size: 1.3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	font-weight: bold;
+	
+}
+
+.menu-header a:hover {
+	color: #e4bb23;
+}
+
+.usuario {
+	display: flex;
+	align-items: center;
+}
+
+.usuario img {
+	border-radius: 50%;
+	border: 0;
+	height: 45px;
+	width: 45px;
+	margin-right: 15px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.usuario span {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.destaque {
+	background-image: url(../img/capa-madmax2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.titulo-header {
+	color: #fff;
+    font-size: 6.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
 }
