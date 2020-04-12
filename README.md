@@ -1,6 +1,6 @@
 # Site estático: 🎥 IMDB  
 
-Desafio da primeira semana do curso React Women da Codenation em parceria com a Loft.
+Desafio da primeira semana do curso **React Women**, desenvolvido pela [Codenation](https://www.codenation.dev/) em parceria com a [Loft](https://www.loft.com.br/).
   
 ## Objetivo: 
 O desafio é desenvolver a página inicial de um site de avaliação de filmes (IMDB - Internet Movies Database) utilizando apenas **HTML5** e **CSS3**.
