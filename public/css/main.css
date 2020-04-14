@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
+	font-size: 10px;
 }
 
 .container {
@@ -43,7 +43,7 @@ body {
 
 .menu-header a {
 	color: #fff;
-	/* font-size: 1.3em; */
+	font-size: 1.3em;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.2s ease-in-out;
@@ -71,7 +71,7 @@ body {
 
 .usuario span {
 	color: #fff;
-	/* font-size: 1.3em; */
+	font-size: 1.3em;
 	font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ body {
 
 .titulo-header {
 	color: #fff;
-    font-size: 4.5em;
+    font-size: 6.5em;
     font-weight: bold;
     line-height: 1.2em;
     margin: 0;
@@ -138,7 +138,7 @@ body {
 	display: inline-block;
 	padding: 15px 50px;
 	color: #000;
-	/* font-size: 1.5em; */
+	font-size: 1.5em;
 	text-decoration: none;
 	background-color: #e4bb23;
 	border-radius: 40px;
@@ -151,9 +151,16 @@ body {
 	background-color: #bc9a1d;
 }
 
+.botao-destaque i {
+	font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
 .info-destaque {
 	padding: 20px 0;
-	/* font-size: 1.4em; */
+	font-size: 1.4em;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -197,3 +204,40 @@ body {
 	box-shadow: inset 0 -1px 0 #e4bb23;
 }
 
+footer {
+	width: 100%;
+	padding: 20px 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.redes-sociais {
+	display: flex;
+	padding: 0;
+}
+
+.redes-sociais a {
+	margin: 0 20px;
+	text-decoration: none;
+	color: #bababa;
+	font-size: 2.5em;
+	transition: all 0.2s ease-in-out;
+}
+
+.icone-twitter a:hover {
+	color: #55acee;
+}
+
+.icone-facebook a:hover {
+	color: #3b5998;
+}
+
+.icone-instagram a:hover {
+	color: #e95950;
+}
