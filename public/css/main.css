@@ -11,23 +11,44 @@ body {
 	font-size: 1em;
 }
 
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
 .nav-header {
 	z-index: 2;
 	display: flex;
 }
 
+.logo {
+	display: inline-block;
+}
+
 .menu-header {
 	display: flex;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-header a {
 	color: #fff;
-	font-size: 1.3em;
+	/* font-size: 1.3em; */
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.2s ease-in-out;
 	font-weight: bold;
-	
+	margin: 0 25px;
 }
 
 .menu-header a:hover {
@@ -45,12 +66,12 @@ body {
 	height: 45px;
 	width: 45px;
 	margin-right: 15px;
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 3px #00000080;
 }
 
 .usuario span {
 	color: #fff;
-	font-size: 1.3em;
+	/* font-size: 1.3em; */
 	font-weight: bold;
 }
 
@@ -67,11 +88,112 @@ body {
 	justify-content: space-between;
 }
 
+.destaque:after {
+    background: linear-gradient( 0deg, #00000099 0%, #00d4ff00 75% );
+    content: "";
+    height: 90vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+	width: 100%;
+}
+
+.conteudo-destaque {
+	width: 100%;
+}
+
+.conteudo-destaque .container {
+	position: relative;
+	z-index: 2;
+}
+
 .titulo-header {
 	color: #fff;
-    font-size: 6.5em;
+    font-size: 4.5em;
     font-weight: bold;
     line-height: 1.2em;
     margin: 0;
     text-transform: uppercase;
 }
+
+.generos-filmes {
+    display: flex;
+    margin: 15px 0 30px;
+	font-size: 13px;
+}
+
+.generos-filmes a {
+	color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.generos-filmes a:hover {
+	color: #e4bb23;
+}
+
+.botao-destaque {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	/* font-size: 1.5em; */
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	border: none;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.botao-destaque:hover {
+	background-color: #bc9a1d;
+}
+
+.info-destaque {
+	padding: 20px 0;
+	/* font-size: 1.4em; */
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.info-destaque p:last-child {
+	color: #bc9a1d;
+}
+
+.catalogo {
+    background-color: #f2f2f2;
+	width: 100%;
+}
+
+.nav-catalogo {
+	width: 100%;
+}
+
+.lista-catalogo {
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #00000014;
+}
+
+.lista-catalogo a {
+	margin: 0 20px;
+	color: #e4bb23;
+    display: inline-block;
+	padding: 25px 0;
+	font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out
+}
+
+.lista-catalogo a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
