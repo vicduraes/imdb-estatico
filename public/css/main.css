@@ -162,8 +162,6 @@ body {
 	padding: 20px 0;
 	font-size: 1.4em;
 	color: #fff;
-	display: flex;
-	flex-direction: column;
 }
 
 .info-destaque p:last-child {
@@ -202,6 +200,126 @@ body {
 
 .lista-catalogo a:hover {
 	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.lista-filmes {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px 0;
+}
+
+.filme-catalogo {
+	display: flex;
+	flex-direction: column;
+	width: 24%;
+	overflow: hidden;
+	margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px #0000001a;
+}
+
+.poster {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.poster img {
+	width: 100%;
+    height: auto;
+}
+
+.poster-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 80px 20px;
+    left: 0;
+    top: 0;
+    background-color: #00000080;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.poster-info h3 {
+	color: #e4bb23;
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.link-filme {
+	color: #fff;
+    font-size: 5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-filme:hover {
+	color: #e4bb23;
+}
+
+.filme-catalogo:hover .poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.filme-infos {
+	padding: 10px;
+	width: 100%;
+}
+
+.filme-infos h3 {
+	margin: 0;
+	font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sinopse-genero {
+	display: flex;
+	margin: 10px 0;
+}
+
+.sinopse-genero a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #e4bb23;
+}
+
+.sinopse-genero a:hover {
+	text-decoration: underline;
+}
+
+.avaliacao-filme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.avaliacao-filme i {
+	color: #ccc;
+    cursor: pointer;
+}
+
+.avaliacao-filme i:hover {
+	color: #e74c3c;
 }
 
 footer {
